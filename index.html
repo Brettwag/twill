@@ -1,3 +1,46 @@
+
+1773699547998_image.png
+Give me the code for a very simple comign soon page that looks like this:
+
+4:19 PM
+
+Viewed a file, created a file, read a file
+Viewed a file, created a file, read a file
+Here's your coming soon page! It matches the screenshot with a dark background (
+#1a1f2e), centered layout, email input with a blue Subscribe button, and the supporting text lines. Just a single HTML file — no dependencies needed.
+
+Coming soon
+Code · HTML 
+use inter, sans serif, remove the email and 'be the first to know'
+
+4:20 PM
+
+Edited 2 files, read a file
+Edited 2 files, read a file
+Done — now using Inter, and stripped down to just the heading and subtitle.
+
+Coming soon
+Code · HTML 
+add a spot for a logo above the coming soon
+
+4:32 PM
+
+Edited 2 files, read a file
+Edited 2 files, read a file
+Added a rounded logo placeholder above the heading — just swap out the div with an <img> tag when you have your logo ready.
+
+Coming soon
+Code · HTML 
+
+
+Want to be notified when Claude responds?
+
+
+
+Claude is AI and can make mistakes. Please double-check responses.
+Coming soon · HTML
+Copy
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,6 +69,22 @@
       text-align: center;
     }
  
+    .logo {
+      width: 72px;
+      height: 72px;
+      border-radius: 16px;
+      background: #2a3147;
+      border: 1px dashed #3a4560;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.5rem;
+      color: #4a5578;
+      font-size: 0.7rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+ 
     h1 {
       font-size: 2.5rem;
       font-weight: 700;
@@ -40,6 +99,7 @@
 </head>
 <body>
   <div class="container">
+    <div class="logo">Logo</div>
     <h1>Coming Soon</h1>
     <p>We're working on something awesome!</p>
   </div>
